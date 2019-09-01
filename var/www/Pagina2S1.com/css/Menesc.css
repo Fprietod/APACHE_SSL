@@ -1,0 +1,102 @@
+body
+{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header
+{
+    width: 100%;
+    background: #A9A9A9;
+}
+
+/*Hamburguer menu*/
+*.H-M
+{
+    color:white;
+}
+
+#btn-menu
+{
+ display: none;   
+}
+
+header label
+{
+    display:none;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+
+}
+
+header label:hover
+{
+    cursor: pointer;
+    background:rgba(0,0,255,0.7); 
+}
+
+.Menesc ul
+{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.Menesc li a
+{
+    display: block;
+    padding: 25px 30px;
+    color: #fff;
+    text-decoration: none; 
+}
+
+.Menesc li
+{
+    text-align: center;
+    flex-grow: 1;
+}
+
+.Menesc li:hover
+{
+    background: rgba(0,0,255,0.7);
+}
+
+/*MEDIA QUERYS PARA RESPONSIVE*/
+
+@media screen and (max-width: 768px)
+{
+    header label
+    {
+        display: inline-flex;
+    }    
+
+    .Menesc
+    {
+        position:absolute;
+        background: #A9A9A9;
+        width: 40%;
+        margin-left: -70%;
+        transition: all 0.5s;
+        
+    }
+
+    .Menesc ul
+    {
+        flex-direction: column;
+    }
+
+    .Menesc li
+    {
+        border-top: 1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .Menesc
+    {
+        margin: 0;
+    }
+    
+}

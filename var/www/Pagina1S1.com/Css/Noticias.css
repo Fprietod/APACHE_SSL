@@ -1,0 +1,32 @@
+#Not h3,h4
+{
+	text-align: center;
+}
+
+#Not .Contenedor
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#Not article
+{
+	margin: 15px;
+}
+
+#Not img
+{
+	width: 100%;
+	max-width:380px;
+	
+
+}
+
+#Not a
+{
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	border: 1px solid white;
+} 
